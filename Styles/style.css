@@ -330,9 +330,20 @@ margin-top: 9px;
     display: flex;
     flex-direction: column;
 }
+.login-form-a{
+    display: flex;
+    flex-direction: column;
+}
+
 .login-form input,button{
     font-size:1.3em ;
     margin-top: 18px;
+    border: 1px solid rgb(181, 175, 175);
+    
+}
+.login-form-a input,button{
+    font-size:1em ;
+    margin-top: 10px;
     border: 1px solid rgb(181, 175, 175);
     
 }
@@ -341,11 +352,24 @@ margin-top: 9px;
     border-radius: 10px;
     height: 30px;
 }
+.login-form-a input{
+    background-color: #3a3a3a64;
+    border-radius: 10px;
+    height:20px;
+}
 .login-form button{
     background-color: rgb(243, 162, 0);
     transition: 0.9s;
     font-weight: 700;
     padding: 5px;
+    transform: translate(-0px,5px);
+    
+}
+.login-form-a button{
+    background-color: rgb(243, 162, 0);
+    transition: 0.9s;
+    font-weight: 600;
+    padding:3px;
     transform: translate(-0px,5px);
     
 }
@@ -362,15 +386,138 @@ margin-top: 9px;
 
 .login-form{
     margin-top: 10%;
-    border: 5px solid rgb(97, 98, 88);
+    border: 2px solid rgb(217, 218, 215);
     padding-left:30px;
     padding-right: 30px;
-   padding-bottom: 20px;
+   padding-bottom: 20px;    
+}
+.login-form-a{
+    margin-top: 7%;
+    border: 2px solid rgb(217, 218, 215);
+    
    
-    
-    
+       
 }
 
 
 
+/* all media screen */
 
+/* for mobile */
+@media screen and (max-width:767px) {
+  
+       
+    .main-nav .header-logo{
+        text-align: center;
+        margin-left: 60%;
+        color: #000000;
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;    
+    }
+  
+    .main-nav{
+    width: 162px;
+    height: 19px;
+    display: flex;
+    
+        
+    }
+    .main-nav .fa-bars{
+        margin-top: 70px;
+        padding-left: 30px;
+        width: 24px;
+        height: 24px;
+    }
+    .nav-picker ul li{
+        display: none;
+        
+    }
+    .main-nav .nav-picker ul .fa-magnifying-glass{
+       display: none;
+    }
+    .main-nav .nav-picker ul .fa-cart-shopping{
+      padding-left:50px; 
+       width: 24px;
+       height: 24px;
+        
+    }
+
+    .img-main img{
+        
+      width: 257px;
+      height: 257px;
+    }
+    .img-main{
+      
+        margin-left: 15%;
+    }
+    .container .left-items-in-head{
+        margin-top: 60%;
+    }
+    .container .left-items-in-head h1{
+        width: 404px;
+        height: 78px;
+        margin-left: -30%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .container .left-items-in-head p{
+        margin-left: -20%;
+       text-align: center;
+       width: 321px;
+       height: 65px;
+        font-size: 14px;
+    }
+    .companys hr{
+        display: none;
+    }
+    .companys{
+        width: 275px;
+        height: 61px;
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 150%;
+        
+    }
+    
+    .companys img{
+         
+         width: 120px;
+         height: 40px;
+    }
+    .popular-collections .tittle-popular-collection{
+        width: 150px;
+        height: 24px;
+        margin-left: 5%;
+        text-align: center;
+        margin-top:18%;
+        margin-bottom: 10%;
+
+    }
+    .popular-collections .collection{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -3.8%;
+    }
+    .section-contact  {
+        display: none;
+    }
+    .login-form-a{
+        margin-top: 1050%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .main-nav .fa-bars{
+        display: none;
+    }
+    .login-form-a{
+        display: none;
+        background-color: #18191F;
+    }
+    
+}
