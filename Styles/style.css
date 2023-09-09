@@ -518,6 +518,11 @@ margin-top: 9px;
     .login-form-a{
         display: none;
         background-color: #18191F;
+        margin-bottom: 25%;
+        border: none;
+    }
+    .login-form-a input{
+        background-color: #ff7b00;
     }
     
 }
